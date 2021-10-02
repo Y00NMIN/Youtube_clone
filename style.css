@@ -1,0 +1,43 @@
+:root{
+  --background-color: #f0f4f5;
+  -font-color-1: #263343;
+  --link-color: #b80c16;
+}
+
+body{
+  margin: 0;
+}
+
+a{
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+.navbar{
+  background: #704b33;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 8px;
+}
+
+.navbar_logo{
+  font-size:20px;
+  color: var(--link-color);
+}
+
+.navbar_menu{
+  display: flex;
+  font-size: 15px;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.navbar_menu li{
+  padding: 4px 8px;
+}
+
+video{
+  width: 100%;
+  height: 500px;
+}
