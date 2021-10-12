@@ -3,15 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="Youtube_colne" content="Youtube_colne_coding">
-    <title>Youtube_colne</title>
+    <title>Youtube_Mobile</title>
 
     <link href="style.css" rel="stylesheet" type="text/css" />
 
-    <script src="script.js"defer></script>
-
     <script src="https://kit.fontawesome.com/869f10c14c.js"
     crossorigin="anonymous"></script>
-
+    <script src="script.js"defer></script>
   </head>
   <body>
     <nav class="navbar">
@@ -26,15 +24,82 @@
       </ul>
     </nav>
 
-    <video controls width="250">
-     <source src="" type="video/webm">
-     <source src="" type="video/mp4">
-    </video>
     
-    <main></main>
+    <section class="player" >
+      <video controls src="video/welove.mp4"></video>
+    </section>
+   
+    <div class="MainAndUpnext">
+      <section class="main">
+       <div class="main_hash_tag">
+         <span><a href=""> #Yoon Coding</a></span>
+         <span><a href=""> #Yoon Coder</a></span>
+         <span><a href=""> #Yoon</a></span>
+       </div>
 
-    
+       <div class="main_title">
+         <span class="main_title_word clamp">Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라 만들기 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript 드림코딩과 함께하는 프론트엔드 실전 입문편</span>
+         <button name="text_button"><i class="fas fa-angle-down"></i></button>
+       </div>
+      
+       <div class="main_title_info"> 조회수 1 회 ㅣ 2021. 10. 03 </div>
 
+       <ul class="main_action_button">
+         <li><button><i class="active fas fa-thumbs-up"></button></i><div>number</div></li>
+         <li><button><i class="fas fa-thumbs-down"></button></i><div>number</div></li>
+         <li><button><i class="fas fa-share"></button></i><div>Share</div></li>
+         <li><button><i class="fas fa-plus"></button></i><div>Save</div></li>
+         <li><button><i class="fas fa-flag"></button></i><div>Report</div></li>
+       </ul>
+
+       <div class="subscr">
+         <div class="subscr_title">
+           <img src="img/Yoon.jpg"><alt=""></img>
+           <div class="info">
+             <span class="subscr_name">개발자 by 윤민</span>
+             <span class="subscr_sub">2M subcribers</span>
+          </div>
+         </div>
+         <button class="subscr_scr">SUBSCRIBE</button>
+       </div>
+
+    </section>
+
+    <section class="upnext">
+      <span class="title">UP next</span>
+      <ul>
+        <li class="item">
+          <div class="img"><img src="img/front-end.jpg" alt=""></div>
+          <div class="info">
+          <span class="title">프론트엔드 유튜브 웹 처음 만들어보기! 풀스택 개발자를 위한 길을 걷기</span>
+          <span class="name">개발자 by 윤민</span>
+          <span class="view">300 views</span>
+          </div>
+          <button class="pluse_info"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+        <li class="item">
+          <div class="img"><img src="img/code.png" alt=""></div>
+          <div class="info">
+          <span class="title"> 더러운 코드, 보기 쉽고 깔끔한 코드로 탈바꿈하는  방법</span>
+          <span class="name">개발자 by 윤민</span>
+          <span class="view">100 views</span>
+          </div>
+          <button class="pluse_info"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+        <li class="item">
+          <div class="img"><img src="img/CSS.jpg" alt=""></div>
+          <div class="info">
+          <span class="title">여기는 단지 HTML,CSS를 위한 공간입니다. JS는 아직 준비가 덜 되어서 기능은 없답니다...ㅎㅎㅎ</span>
+          <span class="name">개발자 by 윤민</span>
+          <span class="view">200 views</span>
+          </div>
+          <button class="pluse_info"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+      </ul>
+
+    </section>
+    </div>
   
   </body>
+  
 </html>
