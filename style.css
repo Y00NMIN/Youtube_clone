@@ -91,12 +91,11 @@ a{
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
-.main .main_title .text_button{
-  
-}
+
 .main .main_title .text_button.clicked{
   transform: rotate(180deg);
 }
+
 .main_title li{
   padding: 5px;
 }
