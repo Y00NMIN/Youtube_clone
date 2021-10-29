@@ -3,6 +3,7 @@
   --font-color-1: #263343;
   --link-color: #b80c16;
   --tag-color: #4589ff;
+  --black-color: #1a1717;
 }
 
 
@@ -30,20 +31,35 @@ a{
 }
 
 .navbar{
-  background: #704b33;
+  background: var(--background-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 4px 8px;
 }
 
+
 .navbar_logo{
   font-size:20px;
+  color: var(--black-color); 
+  list-style: none;
+  display: flex;
+}
+
+.navbar_logo .bars{
+  padding-right: 30px;
+}
+
+.navbar_logo .youtube_logo{
   color: var(--link-color);
+  font-size: 25px;
+  align-items: center;
+  padding-right: 5px;
 }
 
 .navbar_logo a{
-  color: var(--background-color); 
+  color: var(--black-color) ; 
+  font-weight: bold;
 }
 
 .navbar_menu{
@@ -54,7 +70,7 @@ a{
 }
 
 .navbar_menu a{
-  color: var(--background-color);
+  color: var(--black-color);
 }
 
 .navbar_menu li{
@@ -273,5 +289,18 @@ button.subscr_scr{
   display: flex;
   text-align: right;
   padding:20px;
+  width: 50%;
  
+}
+
+.searchbox .search_logo{
+  border-color: #b5ab9c;
+  outline-width: thick;
+
+}
+
+.searchbox .search_mic_logo{
+  border: 0;
+  outline: 0;
+  
 }
