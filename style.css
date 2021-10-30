@@ -12,6 +12,7 @@ body{
   margin-right: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+  background-color: var(--background-color);
 
 }
 
@@ -36,6 +37,7 @@ a{
   align-items: center;
   justify-content: space-between;
   padding: 4px 8px;
+  height: 80px;
 }
 
 
@@ -44,15 +46,17 @@ a{
   color: var(--black-color); 
   list-style: none;
   display: flex;
+  align-items: center;
 }
 
 .navbar_logo .bars{
   padding-right: 30px;
+  align-items: center;
 }
 
 .navbar_logo .youtube_logo{
   color: var(--link-color);
-  font-size: 25px;
+  font-size: 30px;
   align-items: center;
   padding-right: 5px;
 }
@@ -60,11 +64,12 @@ a{
 .navbar_logo a{
   color: var(--black-color) ; 
   font-weight: bold;
+  align-items: center;
 }
 
 .navbar_menu{
   display: flex;
-  font-size: 15px;
+  font-size: 20px;
   list-style: none;
   padding-left: 0px;
 }
@@ -149,6 +154,8 @@ a{
   flex-direction: row;
   margin-top: -30px;
   margin-bottom: -30px;
+  background-color: var(--background-color);
+  
 
 }
 
@@ -159,6 +166,7 @@ a{
   font-size: 40px;
   border:0;
   outline: 0;
+  background-color: var(--background-color);
   
 }
 
@@ -285,22 +293,64 @@ button.subscr_scr{
   }
 }
 
+@media screen and (max-width: 768px){
+  .navbar_logo{
+    padding-left: 3px;
+    font-size: 15px;
+  }
+  .youtube_logo{
+    padding-left: 3px;
+    font-size: 15px;
+  }
+
+  .navbar_menu{
+    font-size: 15px;
+  }
+
+  
+
+}
+
 .searchbox{
   display: flex;
-  text-align: right;
-  padding:20px;
-  width: 50%;
- 
+  padding: 20px;
+  border-radius: 3px;
+  border-color:#b5ab9c;
+  justify-content: center;
+  list-style: none;
+}
+
+.searchbox input{
+  weight: 100px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.searchbox input:focus{
+  outline: 2px #b5ab9c;
 }
 
 .searchbox .search_logo{
+  font-size: 26px;
   border-color: #b5ab9c;
-  outline-width: thick;
+  border-style:  groove;
+  background-color: var(--background-color);
+}
+
+.searchbox .search_logo i{
+  font-size: 15px;
+  background-color: var(--background-color);
 
 }
 
 .searchbox .search_mic_logo{
+  font-size: 26px;
+  background-color: var(--background-color);
   border: 0;
   outline: 0;
-  
+}
+
+.searchbox .search_mic_logo i{
+  font-size: 15px;
+  background-color: var(--background-color);
 }
