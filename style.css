@@ -155,8 +155,6 @@ a{
   margin-top: -30px;
   margin-bottom: -30px;
   background-color: var(--background-color);
-  
-
 }
 
 .main_action_button button{
@@ -310,6 +308,15 @@ button.subscr_scr{
   .navbar_logo .bars{
   padding-right: 5px;
   }
+
+  .main_action_button button{
+  font-size: 30px;
+  }
+
+  .main_action_button li{
+  font-size: 35px;
+  padding: 20px;
+}
  
 }
 
