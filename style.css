@@ -58,7 +58,7 @@ a{
   color: var(--link-color);
   font-size: 30px;
   align-items: center;
-  padding-right: 5px;
+  
 }
 
 .navbar_logo a{
@@ -307,13 +307,15 @@ button.subscr_scr{
     font-size: 15px;
   }
 
-  
-
+  .navbar_logo .bars{
+  padding-right: 5px;
+  }
+ 
 }
 
 .searchbox{
   display: flex;
-  padding: 20px;
+
   border-radius: 3px;
   border-color:#b5ab9c;
   justify-content: center;
