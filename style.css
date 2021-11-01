@@ -68,8 +68,9 @@ a{
 }
 
 .navbar_menu{
+  height: 40px;
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
   list-style: none;
   padding-left: 0px;
   align-items: center;
@@ -84,13 +85,20 @@ a{
 }
 
 .navbar_menu .login_icons{
+  font-size: 15px;
   outline-color: var(--tag-color);
   border-radius: 3px;
   border-color: var(--tag-color);
   height: 35px;
-  width: 80px;
+  width: 100px;
   color: var(--tag-color);
   border-width: 1px;
+}
+
+.navbar_menu .login_icons i{
+  font-size: 20px;
+  padding-right: 3px;
+  
 }
 
 .player {
