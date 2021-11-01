@@ -72,6 +72,7 @@ a{
   font-size: 20px;
   list-style: none;
   padding-left: 0px;
+  align-items: center;
 }
 
 .navbar_menu a{
@@ -80,6 +81,16 @@ a{
 
 .navbar_menu li{
   padding: 4px 8px;
+}
+
+.navbar_menu .login_icons{
+  outline-color: var(--tag-color);
+  border-radius: 3px;
+  border-color: var(--tag-color);
+  height: 35px;
+  width: 80px;
+  color: var(--tag-color);
+  border-width: 1px;
 }
 
 .player {
@@ -284,55 +295,23 @@ button.subscr_scr{
   flex-direction: column;
 }
 
-@media screen and (min-width: 768px){
-  .MainAndUpnext{
-    flex-direction: row;
-    margin: 15px 0;
-  }
-}
-
-@media screen and (max-width: 768px){
-  .navbar_logo{
-    padding-left: 3px;
-    font-size: 15px;
-  }
-  .youtube_logo{
-    padding-left: 3px;
-    font-size: 15px;
-  }
-
-  .navbar_menu{
-    font-size: 15px;
-  }
-
-  .navbar_logo .bars{
-  padding-right: 5px;
-  }
-
-  .main_action_button button{
-  font-size: 30px;
-  }
-
-  .main_action_button li{
-  font-size: 35px;
-  padding: 20px;
-}
- 
-}
-
 .searchbox{
   display: flex;
-
+  padding-left: 0;
   border-radius: 3px;
   border-color:#b5ab9c;
   justify-content: center;
   list-style: none;
+  
 }
 
 .searchbox input{
-  weight: 100px;
+  flex-wrap: wrap;
+  width: 300px;
   height: 30px;
   font-size: 20px;
+  flex-grow: 1;
+
 }
 
 .searchbox input:focus{
@@ -342,8 +321,10 @@ button.subscr_scr{
 .searchbox .search_logo{
   font-size: 26px;
   border-color: #b5ab9c;
-  border-style:  groove;
+  border-width: 1.5px;
   background-color: var(--background-color);
+  border-radius: 2px;
+
 }
 
 .searchbox .search_logo i{
@@ -357,9 +338,72 @@ button.subscr_scr{
   background-color: var(--background-color);
   border: 0;
   outline: 0;
+ 
 }
 
 .searchbox .search_mic_logo i{
   font-size: 15px;
   background-color: var(--background-color);
+}
+
+//반응형 웹 CSS정리 Section
+
+@media screen and (min-width: 768px){
+  .MainAndUpnext{
+    flex-direction: row;
+    margin: 15px 0;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .navbar_logo{
+    padding-left: 3px;
+    font-size: 15px;
+  }
+  .youtube_logo{
+    padding-left: 3px;
+    font-size: 15px;
+  }
+
+  .navbar_menu{
+    font-size: 15px;
+    height: 33px;
+    padding-top: 5px;
+  }
+
+  .navbar_logo .bars{
+   padding-right: 5px;
+  }
+
+  .main_action_button button{
+    font-size: 30px;
+  }
+
+  .main_action_button li{
+    font-size: 35px;
+    padding: 20px;
+ }
+ 
+}
+
+@media screen and (max-width: 500px){
+  .searchbox input{
+    display: none;
+  }
+
+  .searchbox .search_logo{
+    border: 0;
+    outline:  0;
+  }
+
+  .searchbox{
+    margin-left: auto;
+  }
+
+  .navbar_menu{
+    align-items: center;
+    
+  }
+
 }
