@@ -44,7 +44,7 @@ a{
 .navbar_logo{
   font-size:20px;
   color: var(--black-color); 
-  list-style:  none;
+  list-style: none;
   display: flex;
   align-items: center;
 }
@@ -66,13 +66,14 @@ a{
   font-weight: bold;
   align-items: center;
 }
-
 /*------navbar_menu section--------*/
 .navbar_menu{
+  height: 40px;
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
   list-style: none;
   padding-left: 0px;
+  align-items: center;
 }
 
 .navbar_menu a{
@@ -83,6 +84,22 @@ a{
   padding: 4px 8px;
 }
 
+.navbar_menu .login_icons{
+  font-size: 15px;
+  outline-color: var(--tag-color);
+  border-radius: 3px;
+  border-color: var(--tag-color);
+  height: 35px;
+  width: 100px;
+  color: var(--tag-color);
+  border-width: 1px;
+}
+
+.navbar_menu .login_icons i{
+  font-size: 20px;
+  padding-right: 3px;
+  
+}
 /*--------player section----------*/
 .player {
   position: static;
@@ -116,12 +133,10 @@ a{
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
 .main .main_title_word {
   font-size: 15px;
   margin-right: 10px;
 }
-
 .main .main_title .main_title_word.clamp{
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -136,7 +151,6 @@ a{
 .main_title li{
   padding: 5px;
 }
-
 .main_title button {
   height: 100%;
   border:0;
@@ -170,19 +184,18 @@ a{
   border:0;
   outline: 0;
   background-color: var(--background-color);
-
+  
 }
 
 .main_action_button button i.active{
  color:var(--tag-color); 
-}
 
+}
 .main_action_button div{
   align-items: center;
   color:var(--font-color-1);
   font-size: 12px;
 }
-
 .main_action_button li{
   font-size: 45px;
   padding: 30px;
@@ -209,7 +222,6 @@ button.subscr_scr{
   margin-left: auto;
   font-size:20px;
 }
-
 .subscr_scr{
   margin-left:  auto;
   background-color: #ff404d;
@@ -225,7 +237,6 @@ button.subscr_scr{
   flex-direction: column;
   padding: 7px;
 }
-
 .info .subscr_sub{
   font-size: 15px;
 }
@@ -243,13 +254,11 @@ button.subscr_scr{
 .upnext ul{
   padding-left:5px;
 }
-
 .upnext li{
   list-style:none;
   display:flex;
   padding-bottom: 15px;
 }
-
 .upnext{
   padding:  0 15px;
 }
@@ -296,17 +305,21 @@ button.subscr_scr{
 /*-------searchbox section----------*/
 .searchbox{
   display: flex;
-
+  padding-left: 0;
   border-radius: 3px;
   border-color:#b5ab9c;
   justify-content: center;
   list-style: none;
+  
 }
 
 .searchbox input{
-  weight: 100px;
+  flex-wrap: wrap;
+  width: 300px;
   height: 30px;
   font-size: 20px;
+  flex-grow: 1;
+
 }
 
 .searchbox input:focus{
@@ -316,8 +329,10 @@ button.subscr_scr{
 .searchbox .search_logo{
   font-size: 26px;
   border-color: #b5ab9c;
-  border-style:  groove;
+  border-width: 1.5px;
   background-color: var(--background-color);
+  border-radius: 2px;
+
 }
 
 .searchbox .search_logo i{
@@ -331,6 +346,7 @@ button.subscr_scr{
   background-color: var(--background-color);
   border: 0;
   outline: 0;
+ 
 }
 
 .searchbox .search_mic_logo i{
@@ -338,7 +354,7 @@ button.subscr_scr{
   background-color: var(--background-color);
 }
 
-/*---------미디어 요소 부분---------*/
+/*--------media section----------*/
 
 @media screen and (min-width: 768px){
   .MainAndUpnext{
@@ -346,6 +362,7 @@ button.subscr_scr{
     margin: 15px 0;
   }
 }
+
 
 @media screen and (max-width: 768px){
   .navbar_logo{
@@ -359,23 +376,24 @@ button.subscr_scr{
 
   .navbar_menu{
     font-size: 15px;
+    height: 33px;
+    padding-top: 5px;
   }
 
   .navbar_logo .bars{
-  padding-right: 5px;
+   padding-right: 5px;
   }
 
   .main_action_button button{
-  font-size: 30px;
+    font-size: 30px;
   }
 
   .main_action_button li{
-  font-size: 35px;
-  padding: 20px;
-}
+    font-size: 35px;
+    padding: 20px;
+ }
  
 }
-
 
 @media screen and (max-width: 500px){
   .searchbox input{
