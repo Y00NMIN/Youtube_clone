@@ -338,6 +338,7 @@ button.subscr_scr{
 .searchbox .search_logo i{
   font-size: 15px;
   background-color: var(--background-color);
+  color:var(--black-color);
 
 }
 
@@ -352,6 +353,7 @@ button.subscr_scr{
 .searchbox .search_mic_logo i{
   font-size: 15px;
   background-color: var(--background-color);
+  color:var(--black-color);
 }
 
 /*--------media section----------*/
