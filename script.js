@@ -1,10 +1,9 @@
+const textButton = document.querySelector(".main .main_title .text_button");
+const mainTitleWord = document.querySelector(".main .main_title .main_title_word");
 
-window.onload = function(){
-  const text_button = document.querySelector('.main .main_title .text_button');
-  const main_title_word = document.querySelector('.main .main_title .main_title_word');
+textButton.addEventListener('click', ()=>{
+  textButton.classList.toggle('clicked');
+  mainTitleWord.classList.toggle('clamp');
+});
 
-  text_button.addEventListener('click', ()=>{
-    text_button.classList.toggle('clicked');
-    main_title_word.classList.toggle('clamp');
-  });
-}
+
